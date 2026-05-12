@@ -1,3 +1,5 @@
+remote_theme: dirkfabisch/mediator
+
 # Build settings
 gems:
   - jemoji
@@ -22,7 +24,7 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://huatsen.github.io" # the base hostname & protocol for your site
+url: "https://huatsen.github.io" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
