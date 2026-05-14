@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "email:"
 
 email: s711383128@gm.ntpu.edu.tw
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/Headshot.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
