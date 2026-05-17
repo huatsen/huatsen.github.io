@@ -6,8 +6,8 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title1: "倪華岑"
-title2: "Hua-Tsen Ni"
+# title1: "倪華岑"
+title: "Hua-Tsen Ni"
 description: > # this means to ignore newlines until "email:"
    Graduate Institute of Computer Science and Information Engineering, National Taipei University
 
