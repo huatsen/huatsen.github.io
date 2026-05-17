@@ -12,15 +12,15 @@ description: > # this means to ignore newlines until "email:"
 
 email: s711383128@gm.ntpu.edu.tw
 #blog logo
-logo: "/assets/images/headshot.jpg"
+logo: "/assets/images/headshot1.jpg"
 float_logo: false # true, false (default)
 
 # blog cover
-cover: "/assets/images/261779.jpg"
+cover: "/assets/images/261780.jpg"
 
 #name: 'Dirk Fabisch'
 #author: 'Dirk Fabisch'
-author_image: "/assets/images/headshot.jpg"
+author_image: "/assets/images/headshot1.jpg"
 
 paginate:	5
 
