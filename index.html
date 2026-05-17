@@ -2,21 +2,6 @@
 layout: default
 ---
 
-<style>
-  .blog-logo {
-    width: 150px !important;  
-    height: 150px !important;
-    background-size: cover !important;
-  }
-
-  .teaserimage {
-    height: 380px !important;
-  }
-  .teaserimage-image {
-    background-position: center 25% !important;
-  }
-</style>
-
 <div class="teaserimage">
     <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
         Teaser Image
