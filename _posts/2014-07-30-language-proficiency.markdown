@@ -10,14 +10,14 @@ image:
   .lang-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin: 30px 0;
     font-family: inherit;
   }
   
   .lang-card {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
     background: #fcfcfc;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
@@ -27,7 +27,7 @@ image:
   }
   
   .lang-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     border-color: #cccccc;
   }
@@ -60,7 +60,7 @@ image:
   
   .progress-bg {
     background: #eee;
-    height: 4px;
+    height: 5px;
     border-radius: 2px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -123,6 +123,7 @@ image:
       <li><strong>Native Proficiency</strong> — Full fluency in professional speaking, academic reading, and technical writing.</li>
       <li><strong>Bi-Scriptual Expertise</strong> — Proficient in navigating content in both Traditional and Simplified Chinese.</li>
       <li><strong>Technical Document Localization</strong> — Experienced in translating technical and research documentation.</li>
+    </ul>
   </div>
 
 </div>
