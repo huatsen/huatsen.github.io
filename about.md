@@ -5,7 +5,6 @@ permalink: /about/
 ---
 
 <span style="font-size: 1em; display: block; margin-bottom: 10px;">Tel: +886-9-63788383 | New Taipei City, Taiwan</span>
-
 Email: s711383128@gm.ntpu.edu.tw
 
 I am a data analyst skilled in time-series modeling and quantitative analysis.
