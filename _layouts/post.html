@@ -121,11 +121,18 @@
 
     <style>
       #backToTopBtn {
-        display: none;
         position: fixed;
         bottom: 30px;
         right: 30px;
-        z-index: 99;
+        /* 💡 核心修正 1：將層級提高到 9999，確保不被底部的 bottom-closer 大圖擋住 */
+        z-index: 9999; 
+        
+        /* 💡 核心修正 2：改用 opacity 控制隱現，並加入 linear 漸變，外觀更高級 */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s linear, visibility 0.3s linear, transform 0.2s ease, background-color 0.2s ease;
+        
+        /* 你的專屬圓形卡片風格 */
         border: 1px solid #e5e5e5;
         outline: none;
         background-color: #fcfcfc;
@@ -137,8 +144,14 @@
         font-size: 1.3rem;
         font-weight: bold;
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: all 0.2s ease;
       }
+
+      /* 💡 當滿足滾動條件時，由 JS 加上這個 class 讓它淡淡浮現 */
+      #backToTopBtn.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
       #backToTopBtn:hover {
         background-color: #333333;
         color: #ffffff;
@@ -148,18 +161,23 @@
     </style>
 
     <script>
-      const mybutton = document.getElementById("backToTopBtn");
-      window.onscroll = function() { scrollFunction() };
+      // 💡 核心修正 3：改用 addEventListener 監聽滾動，絕對不會跟 {% include javascripts.html %} 裡面的程式碼起衝突
+      window.addEventListener('scroll', function() {
+        const mybutton = document.getElementById("backToTopBtn");
+        if (!mybutton) return;
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-          mybutton.style.display = "block";
+        // 💡 核心修正 4：全面捕捉各種瀏覽器環境的滾動距離 (Window, HTML, Body)
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (scrollTop > 300) {
+          mybutton.classList.add("show");
         } else {
-          mybutton.style.display = "none";
+          mybutton.classList.remove("show");
         }
-      }
+      });
 
-      mybutton.addEventListener("click", function() {
+      // 點擊平滑滾動回頂端
+      document.getElementById("backToTopBtn").addEventListener("click", function() {
         window.scrollTo({
           top: 0,
           behavior: "smooth"
