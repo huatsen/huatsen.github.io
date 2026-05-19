@@ -28,8 +28,18 @@
 
     <style>
       
-      :target, [id] {
-        scroll-margin-top: 500px; 
+      #education::before,
+      #experience::before,
+      #competencies::before,
+      #certifications::before,
+      #club-activities::before {
+        content: "";
+        display: block;
+        /* 這裡填入你想要推開的距離（例如：頂部 Header 的高度再加一點留白） */
+        height: 120px;        
+        margin-top: -120px;   /* 負向邊距，確保不會影響平常網頁閱讀時的排版間距 */
+        visibility: hidden;
+        pointer-events: none;
       }
 
       .side-navigation {
