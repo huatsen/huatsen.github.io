@@ -50,9 +50,41 @@
       <div class="inner">
         <h1 class="blog-title">{{ site.title }}</h1>
         <h2 class="blog-description">{{ site.description }}</h2>
-        <a href={{ "/" | prepend: site.baseurl }} class="btn">Back to Overview</a>
+        
+        <a href={{ "/" | prepend: site.baseurl }} class="btn btn-back-overview">Back to Overview</a>
       </div>
     </div>
+
+    <style>
+      .btn-back-overview {
+        display: inline-block;
+        padding: 12px 32px !important; /* 優雅的膠囊比例 */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        text-decoration: none;
+        border-radius: 50px !important; /* 保持圓角膠囊造型 */
+        
+        /* 🌆 預設：高質感半透明深灰背景 + 微光白色邊框，完美融入搖滾黑白大圖 */
+        background-color: rgba(30, 30, 30, 0.75) !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        
+        /* 絲滑的硬體加速過渡動畫 */
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+        letter-spacing: 0.5px;
+      }
+
+      /* 🖱️ 滑鼠懸停（Hover）：驚艷的黑白反轉反色特效 */
+      .btn-back-overview:hover {
+        background-color: #ffffff !important;
+        color: #111111 !important;
+        border-color: #ffffff !important;
+        transform: translateY(-3px); /* 微微浮起感，更有互動感 */
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5) !important;
+      }
+    </style>
     {% include javascripts.html %}
   </body>
 </html>
