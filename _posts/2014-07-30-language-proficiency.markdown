@@ -10,7 +10,7 @@ image:
   .lang-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 24px;
     margin: 30px 0;
     font-family: inherit;
   }
@@ -21,7 +21,7 @@ image:
     background: #fcfcfc;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
-    padding: 30px;
+    padding: 28px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
     transition: transform 0.2s, box-shadow 0.2s;
   }
