@@ -175,6 +175,9 @@ image:
     margin-bottom: 15px;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
   }
   
   .tech-name {
@@ -182,6 +185,7 @@ image:
     font-weight: bold;
     color: #222222;
     margin: 0;
+    line-height: 1.3;
   }
   
   .tech-progress-bg {
@@ -202,6 +206,9 @@ image:
     .tech-skills-grid {
       flex-wrap: wrap;     
     }
+    .tech-header {
+      min-height: auto;
+    }
   }
 </style>
 
@@ -209,7 +216,7 @@ image:
 
   <div class="tech-card">
     <div class="tech-header">
-      <h3 class="tech-name">AI & Machine Learning</h3>
+      <h3 class="tech-name">AI &<br>Machine Learning</h3>
     </div>
     <div class="tech-progress-bg">
       <div class="tech-progress-fill" style="width: 85%;"></div>
