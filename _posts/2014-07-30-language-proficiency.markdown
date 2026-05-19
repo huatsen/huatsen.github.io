@@ -90,7 +90,7 @@ image:
     content: "•";          
     position: absolute;
     left: 0;
-    top: -1px;            
+    top: -1.5px;            
     color: #666666;        
     font-size: 1.5rem;     
   }
