@@ -96,7 +96,8 @@ image:
     line-height: 1;   
   }
 
-  h2#language-proficiency {
+  h2#language-proficiency 
+  h2#technical-skills {
     color: #333333;
     font-size: 1.5rem;
     font-weight: normal;
