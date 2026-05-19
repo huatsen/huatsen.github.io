@@ -97,9 +97,9 @@ image:
   }
 
   h2#language-proficiency {
-    color: #000000;
-    font-size: 1.6rem;
-    font-weight: bold;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: normal;
     margin-top: 40px;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
