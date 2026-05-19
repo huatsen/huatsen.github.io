@@ -7,19 +7,82 @@
 
     {% include header.html %}
 
-    <!-- content start -->
-
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
 
-    <!-- content end -->
-
     {% include footer.html %}
     {% include javascripts.html %}
 
-  </body>
+    <button id="backToTopBtn" title="Go to top">↑</button>
+
+    <style>
+      #backToTopBtn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99999 !important;
+        
+        /* 預設隱藏 */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s linear, visibility 0.3s linear, transform 0.2s ease, background-color 0.2s ease;
+        
+        /* 完美圓形與居中樣式 */
+        border: 1px solid #e5e5e5;
+        outline: none;
+        background-color: #fcfcfc;
+        color: #333333;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 41px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+
+      #backToTopBtn.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      #backToTopBtn:hover {
+        background-color: #333333;
+        color: #ffffff;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      }
+    </style>
+
+    <script>
+      (function() {
+        
+        window.addEventListener('scroll', function() {
+          const btn = document.getElementById("backToTopBtn");
+          if (!btn) return;
+
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+          if (scrollTop > 250) {
+            btn.classList.add("show");
+          } else {
+            btn.classList.remove("show");
+          }
+        });
+
+        document.getElementById("backToTopBtn").addEventListener("click", function() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      })();
+    </script>
+    </body>
 
 </html>
