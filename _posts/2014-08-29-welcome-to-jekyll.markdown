@@ -21,7 +21,7 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
     top: 10px;
     bottom: 10px;
     width: 2px;
-    background-color: #4183c4; 
+    background-color: #444444; 
   }
   .timeline-item {
     position: relative;
@@ -37,7 +37,7 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
-    border: 2px solid #4183c4;
+    border: 2px solid #444444;
     z-index: 1;
   }
   .job-title {
@@ -48,7 +48,7 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
   }
   .company-name {
     font-size: 1rem;
-    color: #4183c4;
+    color: #333333;
     font-weight: 600;
     margin-bottom: 6px;
   }
