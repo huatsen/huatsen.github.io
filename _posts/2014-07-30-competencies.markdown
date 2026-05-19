@@ -179,6 +179,9 @@ image:
     margin-bottom: 12px;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
   }
   
   .tech-name {
@@ -230,6 +233,9 @@ image:
   @media (max-width: 768px) {
     .tech-skills-grid {
       flex-wrap: wrap;     
+    }
+    .tech-header {
+      min-height: auto;
     }
   }
 </style>
