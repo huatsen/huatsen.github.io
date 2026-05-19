@@ -153,6 +153,7 @@ image:
     gap: 20px;             
     margin: 25px 0 50px 0;
     width: 100%;
+    align-items: stretch;
   }
 
   .tech-card {
@@ -163,6 +164,9 @@ image:
     padding: 24px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
     transition: transform 0.2s, box-shadow 0.2s;
+
+    display: flex;
+    flex-direction: column;
   }
   
   .tech-card:hover {
@@ -172,12 +176,9 @@ image:
   }
   
   .tech-header {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
-    min-height: 54px;
-    display: flex;
-    align-items: center;
   }
   
   .tech-name {
@@ -192,7 +193,7 @@ image:
     background: #eee;
     height: 5px;
     border-radius: 2px;
-    margin-bottom: 5px;   
+    margin-bottom: 18px;   
     overflow: hidden;
   }
   
@@ -202,12 +203,33 @@ image:
     border-radius: 2px;
   }
 
+  .tech-detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tech-detail-list li {
+    font-size: 0.95rem;
+    color: #444444;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 14px;
+  }
+  
+  .tech-detail-list li::before {
+    content: "•";          
+    position: absolute;
+    left: 0;
+    top: -1px;            
+    color: #777777;        
+    font-size: 1.1rem;
+  }
+  
   @media (max-width: 768px) {
     .tech-skills-grid {
       flex-wrap: wrap;     
-    }
-    .tech-header {
-      min-height: auto;
     }
   }
 </style>
@@ -221,6 +243,11 @@ image:
     <div class="tech-progress-bg">
       <div class="tech-progress-fill" style="width: 85%;"></div>
     </div>
+    <ul class="tech-detail-list">
+      <li><strong>Algorithms</strong> — Specialized in Advanced Algorithms, Data Mining & game-playing AI.</li>
+      <li><strong>ML Modeling</strong> — Experienced in AI system modeling & predictive forecasting.</li>
+      <li><strong>Deep Learning</strong> — Skilled in implementation via PyTorch frameworks.</li>
+    </ul>
   </div>
 
   <div class="tech-card">
@@ -230,6 +257,11 @@ image:
     <div class="tech-progress-bg">
       <div class="tech-progress-fill" style="width: 85%;"></div>
     </div>
+    <ul class="tech-detail-list">
+      <li><strong>Languages</strong> — Competent in Python (AI/ML), C/C++, JavaScript (Web).</li>
+      <li><strong>Workflows</strong> — Practiced in web deployment and Git version control via GitHub.</li>
+      <li><strong>Infrastructure</strong> — Knowledgeable in Cloud Computing and SQL databases.</li>
+    </ul>
   </div>
 
   <div class="tech-card">
@@ -239,6 +271,11 @@ image:
     <div class="tech-progress-bg">
       <div class="tech-progress-fill" style="width: 90%;"></div>
     </div>
+    <ul class="tech-detail-list">
+      <li><strong>Capabilities</strong> — Skilled in statistical testing, significant testing & experimental design.</li>
+      <li><strong>Processing</strong> — Expert in data manipulation and preprocessing via Pandas/NumPy.</li>
+      <li><strong>Visualization</strong> — Accomplished in Matplotlib and Seaborn for technical reporting.</li>
+    </ul>
   </div>
 
 </div>
