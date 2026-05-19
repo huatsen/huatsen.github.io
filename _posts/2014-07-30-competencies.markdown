@@ -97,11 +97,11 @@ image:
   }
 
   h2#language-proficiency {
-    color: #000000 !important;
-    font-size: 2rem !important;
-    font-weight: bold !important;
-    margin-top: 40px !important;
-    margin-bottom: 20px !important;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
     letter-spacing: -0.5px;
   }
 </style>
