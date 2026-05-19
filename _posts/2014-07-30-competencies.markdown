@@ -95,6 +95,15 @@ image:
     font-size: 1.4rem;
     line-height: 1;   
   }
+
+  h2#language-proficiency {
+    color: #000000 !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+    letter-spacing: -0.5px;
+  }
 </style>
 
 ## Language Proficiency
