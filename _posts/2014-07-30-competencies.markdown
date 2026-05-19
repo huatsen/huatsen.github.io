@@ -141,3 +141,5 @@ image:
   </div>
 
 </div>
+
+## Technical Skills
