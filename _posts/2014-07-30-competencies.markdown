@@ -216,7 +216,7 @@ image:
 
   <div class="tech-card">
     <div class="tech-header">
-      <h3 class="tech-name">AI &<br>Machine Learning</h3>
+      <h3 class="tech-name">AI & Machine Learning</h3>
     </div>
     <div class="tech-progress-bg">
       <div class="tech-progress-fill" style="width: 85%;"></div>
