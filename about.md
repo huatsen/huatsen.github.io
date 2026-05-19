@@ -5,7 +5,6 @@ permalink: /about/
 ---
 
 Tel: +886-9-63788383 | New Taipei City, Taiwan
-
 Email: s711383128@gm.ntpu.edu.tw
 
 
