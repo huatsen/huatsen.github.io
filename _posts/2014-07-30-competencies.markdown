@@ -105,47 +105,6 @@ image:
     margin-bottom: 20px;
     letter-spacing: -0.5px;
   }
-</style>
-
-## Language Proficiency
-
-<div class="lang-grid">
-
-  <div class="lang-card">
-    <div class="lang-header">
-      <h3 class="lang-name">English</h3>
-      <span class="lang-badge">Advanced</span>
-    </div>
-    <div class="progress-bg">
-      <div class="progress-fill" style="width: 90%;"></div>
-    </div>
-    <ul class="lang-detail-list">
-      <li><strong>TOEIC 895</strong> — Demonstrated advanced proficiency in global business environments.</li>
-      <li><strong>Academic & Research Readiness</strong> — Skilled in delivering research presentations and writing technical papers.</li>
-      <li><strong>Professional Discourse</strong> — Confident in driving cross-cultural technical collaborations and discussions.</li>
-    </ul>
-  </div>
-
-  <div class="lang-card">
-    <div class="lang-header">
-      <h3 class="lang-name">Mandarin Chinese</h3>
-      <span class="lang-badge">Native</span>
-    </div>
-    <div class="progress-bg">
-      <div class="progress-fill" style="width: 100%;"></div>
-    </div>
-    <ul class="lang-detail-list">
-      <li><strong>Native Proficiency</strong> — Full fluency in professional speaking, academic reading, and technical writing.</li>
-      <li><strong>Bi-Scriptual Expertise</strong> — Proficient in navigating content in both Traditional and Simplified Chinese.</li>
-      <li><strong>Technical Document Localization</strong> — Experienced in translating technical and research documentation.</li>
-    </ul>
-  </div>
-
-</div>
-
-## Technical Skills
-
-<style>
   
   .tech-skills-grid {
     display: flex;
@@ -240,6 +199,44 @@ image:
   }
 </style>
 
+## Language Proficiency
+
+<div class="lang-grid">
+
+  <div class="lang-card">
+    <div class="lang-header">
+      <h3 class="lang-name">English</h3>
+      <span class="lang-badge">Advanced</span>
+    </div>
+    <div class="progress-bg">
+      <div class="progress-fill" style="width: 90%;"></div>
+    </div>
+    <ul class="lang-detail-list">
+      <li><strong>TOEIC 895</strong> — Demonstrated advanced proficiency in global business environments.</li>
+      <li><strong>Academic & Research Readiness</strong> — Skilled in delivering research presentations and writing technical papers.</li>
+      <li><strong>Professional Discourse</strong> — Confident in driving cross-cultural technical collaborations and discussions.</li>
+    </ul>
+  </div>
+
+  <div class="lang-card">
+    <div class="lang-header">
+      <h3 class="lang-name">Mandarin Chinese</h3>
+      <span class="lang-badge">Native</span>
+    </div>
+    <div class="progress-bg">
+      <div class="progress-fill" style="width: 100%;"></div>
+    </div>
+    <ul class="lang-detail-list">
+      <li><strong>Native Proficiency</strong> — Full fluency in professional speaking, academic reading, and technical writing.</li>
+      <li><strong>Bi-Scriptual Expertise</strong> — Proficient in navigating content in both Traditional and Simplified Chinese.</li>
+      <li><strong>Technical Document Localization</strong> — Experienced in translating technical and research documentation.</li>
+    </ul>
+  </div>
+
+</div>
+
+## Technical Skills
+
 <div class="tech-skills-grid">
 
   <div class="tech-card">
@@ -278,7 +275,7 @@ image:
       <div class="tech-progress-fill" style="width: 90%;"></div>
     </div>
     <ul class="tech-detail-list">
-      <li><strong>Capabilities</strong> — Skilled in statistical testing, significant testing & experimental design.</li>
+      <li><strong>Capabilities</strong> — Skilled in statistical inference, A/B testing & experimental design.</li>
       <li><strong>Processing</strong> — Expert in data manipulation and preprocessing via Pandas/NumPy.</li>
       <li><strong>Visualization</strong> — Accomplished in Matplotlib and Seaborn for technical reporting.</li>
     </ul>
