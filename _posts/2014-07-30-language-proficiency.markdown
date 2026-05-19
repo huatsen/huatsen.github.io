@@ -10,18 +10,18 @@ image:
   .lang-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin: 30px 0;
     font-family: inherit;
   }
   
   .lang-card {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
     background: #fcfcfc;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
-    padding: 28px;
+    padding: 35px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
     transition: transform 0.2s, box-shadow 0.2s;
   }
@@ -113,7 +113,7 @@ image:
 
   <div class="lang-card">
     <div class="lang-header">
-      <h3 class="lang-name">Mandarin</h3>
+      <h3 class="lang-name">Mandarin Chinese</h3>
       <span class="lang-badge">Native</span>
     </div>
     <div class="progress-bg">
