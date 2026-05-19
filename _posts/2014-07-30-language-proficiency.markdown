@@ -90,9 +90,10 @@ image:
     content: "•";          
     position: absolute;
     left: 0;
-    top: -1px;            
+    top: 4px;            
     color: #666666;        
-    font-size: 1.5rem;     
+    font-size: 1.4rem;
+    line-height: 1;   
   }
 </style>
 
