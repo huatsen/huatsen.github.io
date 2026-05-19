@@ -27,17 +27,11 @@
     </nav>
 
     <style>
-      /* 全網頁啟用絲滑平滑滾動 */
-      html {
-        scroll-behavior: smooth;
-      }
-
-      /* 防遮擋機制：跳轉時與頂部保持 90px 距離 */
+      
       :target, [id] {
-        scroll-margin-top: 90px; 
+        scroll-margin-top: 120px; 
       }
 
-      /* 側邊導覽列定位 */
       .side-navigation {
         position: fixed;
         left: 50px;       
@@ -66,13 +60,11 @@
         display: block;
       }
 
-      /* 鼠標特效 */
       .side-navigation a:hover {
         color: #ffffff;       
         padding-left: 6px;    
       }
 
-      /* 手機平板自動隱藏 */
       @media (max-width: 1200px) {
         .side-navigation {
           display: none;
@@ -81,15 +73,14 @@
     </style>
 
     <script>
-      // 💡 黑科技：自動幫內文標題補上 ID 錨點
+      
       document.addEventListener("DOMContentLoaded", function() {
-        // 抓取網頁中所有的 h1, h2, h3 標題
+        
         const headings = document.querySelectorAll("h1, h2, h3");
         
         headings.forEach(function(heading) {
           const text = heading.textContent.trim().toLowerCase();
           
-          // 根據標題文字，動態塞入對應的 ID
           if (text.includes("education")) {
             heading.id = "education";
           } else if (text.includes("experience")) {
