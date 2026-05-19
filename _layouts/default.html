@@ -104,6 +104,22 @@
           }
         });
       });
+
+      window.addEventListener('scroll', function() {
+        const sideNav = document.getElementById("sideNav");
+        if (!sideNav) return;
+
+        // 偵測目前網頁滾動了多少像素
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+        // 💡 臨界點設定：當網頁往下滾動超過 350 像素（也就是離開大圖進入白色區域時）
+        if (scrollTop > 350) {
+          sideNav.classList.add("light-bg");    // 切換成適合白底的深色字
+        } else {
+          sideNav.classList.remove("light-bg"); // 滾回頂部時變回適合黑底的白字
+        }
+      });
+      
     </script>
     
     <button id="backToTopBtn" title="Go to top">↑</button>
