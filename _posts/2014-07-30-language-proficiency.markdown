@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Language Proficiency"
+title:  "Competencies"
 categories:
 tags: 
 image:
