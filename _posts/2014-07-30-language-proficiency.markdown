@@ -105,9 +105,9 @@ image:
       <div class="progress-fill" style="width: 90%;"></div>
     </div>
     <ul class="lang-detail-list">
-      <li>Professional working proficiency</li>
-      <li>Academic research & report writing</li>
-      <li>Cross-cultural communication support</li>
+      <li><strong>TOEIC 895</strong> — Demonstrated advanced proficiency in global business environments.</li>
+      <li><strong>Academic & Research Readiness</strong> — Skilled in delivering research presentations and writing technical papers.</li>
+      <li><strong>Professional Discourse</strong> — Confident in driving cross-cultural technical collaborations and discussions.</li>
     </ul>
   </div>
 
@@ -120,10 +120,9 @@ image:
       <div class="progress-fill" style="width: 100%;"></div>
     </div>
     <ul class="lang-detail-list">
-      <li>Mother tongue</li>
-      <li>Excellent presentation & narration skills</li>
-      <li>Traditional & Simplified Chinese localization</li>
-    </ul>
+      <li><strong>Native Proficiency</strong> — Full fluency in professional speaking, academic reading, and technical writing.</li>
+      <li><strong>Bi-Scriptual Expertise</strong> — Proficient in navigating content in both Traditional and Simplified Chinese.</li>
+      <li><strong>Technical Document Localization</strong> — Experienced in translating technical and research documentation.</li>
   </div>
 
 </div>
