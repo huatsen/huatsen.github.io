@@ -116,5 +116,56 @@
       </div>
     </div>
     {% include javascripts.html %}
+
+    <button id="backToTopBtn" title="Go to top">↑</button>
+
+    <style>
+      #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        border: 1px solid #e5e5e5;
+        outline: none;
+        background-color: #fcfcfc;
+        color: #333333;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: all 0.2s ease;
+      }
+      #backToTopBtn:hover {
+        background-color: #333333;
+        color: #ffffff;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      }
+    </style>
+
+    <script>
+      const mybutton = document.getElementById("backToTopBtn");
+      window.onscroll = function() { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      mybutton.addEventListener("click", function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+    
   </body>
 </html>
