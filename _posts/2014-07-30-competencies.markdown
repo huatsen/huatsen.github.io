@@ -97,6 +97,8 @@ image:
   }
 </style>
 
+## Language Proficiency
+
 <div class="lang-grid">
 
   <div class="lang-card">
