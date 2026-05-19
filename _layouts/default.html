@@ -27,14 +27,23 @@
     </nav>
 
     <style>
+      /* 全網頁啟用絲滑平滑滾動 */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* 防遮擋機制：跳轉時與頂部保持 90px 距離 */
+      :target, [id] {
+        scroll-margin-top: 90px; 
+      }
+
+      /* 側邊導覽列定位 */
       .side-navigation {
         position: fixed;
-        left: 50px;       /* 這裡可以調整離螢幕最左邊的距離 */
-        
-        /* 💡 核心修正 1：整體上移，避免與圖片中複雜部分撞色 */
-        top: 30%;         /* 從 40% 改為 30%，更靠近頂部 */
+        left: 50px;       
+        top: 30%;         
         transform: translateY(-50%);
-        z-index: 9999;    /* 確保在最上層 */
+        z-index: 9999;    
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       }
 
@@ -44,14 +53,12 @@
         margin: 0;
         display: flex;
         flex-direction: column;
-        
-        /* 💡 核心修正 2：相隔距離拉遠 */
-        gap: 30px;        /* 每個文字之間的上下間距從 16px 增加到 30px */
+        gap: 30px;        
       }
 
       .side-navigation a {
         text-decoration: none;
-        color: #aaaaaa;   /* 💡 核心修正 3：預設改為稍亮一點的灰色，提高在深色背景下的對比度 */
+        color: #aaaaaa;   
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.5px;
@@ -59,18 +66,44 @@
         display: block;
       }
 
+      /* 鼠標特效 */
       .side-navigation a:hover {
-        /* 💡 核心修正 4：鼠標碰到時轉換為純白色 */
-        color: #ffffff;       /* 文字從深黑變為純白，完美避免撞色 */
-        padding-left: 6px;    /* 稍微往右彈一下，很有質感 */
+        color: #ffffff;       
+        padding-left: 6px;    
       }
 
+      /* 手機平板自動隱藏 */
       @media (max-width: 1200px) {
         .side-navigation {
           display: none;
         }
       }
     </style>
+
+    <script>
+      // 💡 黑科技：自動幫內文標題補上 ID 錨點
+      document.addEventListener("DOMContentLoaded", function() {
+        // 抓取網頁中所有的 h1, h2, h3 標題
+        const headings = document.querySelectorAll("h1, h2, h3");
+        
+        headings.forEach(function(heading) {
+          const text = heading.textContent.trim().toLowerCase();
+          
+          // 根據標題文字，動態塞入對應的 ID
+          if (text.includes("education")) {
+            heading.id = "education";
+          } else if (text.includes("experience")) {
+            heading.id = "experience";
+          } else if (text.includes("language")) {
+            heading.id = "language-proficiency";
+          } else if (text.includes("certification")) {
+            heading.id = "certifications";
+          } else if (text.includes("club") || text.includes("activities")) {
+            heading.id = "club-activities";
+          }
+        });
+      });
+    </script>
     
     <button id="backToTopBtn" title="Go to top">↑</button>
 
