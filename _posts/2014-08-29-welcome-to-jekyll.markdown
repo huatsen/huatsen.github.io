@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Experience"
-date:   2014-08-29 14:34:25
 categories:
 tags:
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
