@@ -92,7 +92,7 @@ image:
     left: 0;
     top: -1px;            
     color: #666666;        
-    font-size: 1.2rem;     
+    font-size: 1.5rem;     
   }
 </style>
 
