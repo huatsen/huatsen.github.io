@@ -39,8 +39,7 @@
         transform: translateY(-50%);
         z-index: 9999;    
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-
-        mix-blend-mode: difference;
+        transition: all 0.3s ease;
       }
 
       .side-navigation ul {
@@ -54,7 +53,7 @@
 
       .side-navigation a {
         text-decoration: none;
-        color: #bbbbbb;   
+        color: #aaaaaa;   
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.5px;
@@ -67,6 +66,15 @@
         padding-left: 6px;    
       }
 
+      .side-navigation.light-bg a {
+        color: #666666;
+      }
+      
+      .side-navigation.light-bg a:hover {
+        color: #000000;   
+        padding-left: 6px;
+      }
+      
       @media (max-width: 1200px) {
         .side-navigation {
           display: none;
