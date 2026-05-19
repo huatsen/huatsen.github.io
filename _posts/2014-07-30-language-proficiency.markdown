@@ -87,10 +87,12 @@ image:
   }
   
   .lang-detail-list li::before {
-    content: "—";
+    content: "•";          
     position: absolute;
     left: 0;
-    color: #999999;
+    top: -1px;            
+    color: #666666;        
+    font-size: 1.2rem;     
   }
 </style>
 
