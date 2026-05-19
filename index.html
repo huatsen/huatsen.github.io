@@ -74,7 +74,7 @@ layout: default
       {% endfor %}
     </div>
 
-    <nav class="pagination" role="navigation">
+    <nav class="pagination" role="navigation" style="display: none;">
       {% if paginator.next_page %}
         <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
       {% endif %}
