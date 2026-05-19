@@ -21,12 +21,11 @@ image:
     background: #fcfcfc;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
-    padding: 24px;
+    padding: 28px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
-  /* 滑鼠懸停的優雅微動效 */
   .lang-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -49,27 +48,25 @@ image:
     margin: 0;
   }
   
-  /* 📊 核心亮點：高質感黑灰膠囊標籤 */
   .lang-badge {
     font-size: 0.85rem;
     font-weight: 600;
-    background-color: #333333; /* 核心深灰 */
-    color: #ffffff; /* 純白字 */
+    background-color: #333333;
+    color: #ffffff;
     padding: 4px 12px;
     border-radius: 20px;
     letter-spacing: 0.5px;
   }
   
-  /* 🛠️ 極簡微型進度條 */
   .progress-bg {
     background: #eee;
     height: 4px;
     border-radius: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     overflow: hidden;
   }
   .progress-fill {
-    background: #555; /* 進度條顏色 */
+    background: #555;
     height: 100%;
     border-radius: 2px;
   }
@@ -81,14 +78,14 @@ image:
   }
   
   .lang-detail-list li {
-    font-size: 0.95rem;
-    color: #666666;
-    margin-bottom: 6px;
+    font-size: 1.05rem;
+    color: #444444;
+    line-height: 1.7;
+    margin-bottom: 8px;
     position: relative;
-    padding-left: 15px;
+    padding-left: 18px;
   }
   
-  /* 用小短橫線取代傳統圓點 */
   .lang-detail-list li::before {
     content: "—";
     position: absolute;
@@ -102,7 +99,7 @@ image:
   <div class="lang-card">
     <div class="lang-header">
       <h3 class="lang-name">English</h3>
-      <span class="lang-badge">Fluent / Native</span>
+      <span class="lang-badge">Advanced</span>
     </div>
     <div class="progress-bg">
       <div class="progress-fill" style="width: 90%;"></div>
