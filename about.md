@@ -4,14 +4,9 @@ title: About
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+Tel: +886-9-63788383 | New Taipei City, Taiwan
+Email: s711383128@gm.ntpu.edu.tw
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
-
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I am a data analyst skilled in time-series modeling and quantitative analysis. 
+Experiencing in handling large-scale datasetsto analyze cross-market interactions (spot and derivatives markets). 
+By utilizing statistical models to detect price reversals, I transform complex market data into actionable, data-driven strategies.
