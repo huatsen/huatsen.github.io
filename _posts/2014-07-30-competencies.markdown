@@ -96,7 +96,7 @@ image:
     line-height: 1;   
   }
 
-  h2#language-proficiency 
+  h2#language-proficiency, 
   h2#technical-skills {
     color: #333333;
     font-size: 1.5rem;
@@ -144,3 +144,64 @@ image:
 </div>
 
 ## Technical Skills
+
+<style>
+  /* 框框的外層大容器 */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;       /* 超過寬度自動換行，相容手機版 */
+    gap: 20px;             /* 框框之間的間距 */
+    margin: 25px 0 50px 0; /* 上下留出合適的呼吸空間 */
+    width: 100%;
+  }
+
+  /* 單個技能小框框的基本樣式 */
+  .skill-box {
+    flex: 1;
+    min-width: 220px;      /* 確保在小螢幕時框框不會被擠壓得太醜 */
+    background: #fcfcfc;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;    /* 呼應語言卡片的圓角 */
+    padding: 22px;
+    text-align: center;    /* 文字一律精準置中 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.01);
+    
+    /* 絲滑的滑鼠懸停動畫過渡 */
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.2s ease, 
+                border-color 0.2s ease;
+  }
+
+  /* 🖱️ 當滑鼠移到小框框上時的動態特效 */
+  .skill-box:hover {
+    transform: translateY(-4px);           /* 微微向上飄浮 4px */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06); /* 稍微加深陰影，更有立體感 */
+    border-color: #999999;                 /* 邊框顏色變深 */
+  }
+
+  /* 框框內文字的字體樣式 */
+  .skill-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222222;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: 0.3px;
+  }
+</style>
+
+<div class="skills-grid">
+
+  <div class="skill-box">
+    <h4 class="skill-title">AI & Machine Learning</h4>
+  </div>
+
+  <div class="skill-box">
+    <h4 class="skill-title">Programming</h4>
+  </div>
+
+  <div class="skill-box">
+    <h4 class="skill-title">Data Analysis</h4>
+  </div>
+
+</div>
