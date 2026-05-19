@@ -10,7 +10,7 @@ image:
   .cert-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;          /* 卡片與卡片之間的上下間距 */
+    gap: 16px;          
     margin: 30px 0;
     font-family: inherit;
   }
@@ -27,18 +27,17 @@ image:
   }
   
   .cert-card:hover {
-    transform: translateX(4px); /* 💡 改為向右微動，打破上下浮動的單調感 */
+    transform: translateX(4px); 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     border-color: #cccccc;
   }
   
-  /* 📊 核心亮點：替代圖片的極簡幾何縮寫圖章 */
   .cert-badge-placeholder {
     width: 50px;
     height: 50px;
-    background-color: #333333; /* 深灰底色 */
-    color: #ffffff;            /* 純白文字 */
-    border-radius: 50%;        /* 完美正圓 */
+    background-color: #333333; 
+    color: #ffffff;            
+    border-radius: 50%;        
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +45,7 @@ image:
     font-weight: bold;
     letter-spacing: 0.5px;
     margin-right: 20px;
-    flex-shrink: 0;            /* 防止圓圈被文字擠壓變形 */
+    flex-shrink: 0;            
   }
   
   .cert-info {
@@ -80,42 +79,31 @@ image:
     font-size: 1rem;
     color: #999999;
     font-weight: normal;
-    white-space: nowrap; /* 確保時間在同一行 */
+    white-space: nowrap; 
   }
 </style>
 
 <div class="cert-container">
 
   <div class="cert-card">
-    <div class="cert-badge-placeholder">ISO</div>
+    <div class="cert-badge-placeholder">CPC</div>
     <div class="cert-info">
       <div class="cert-main">
-        <h3 class="cert-name">ISO/IEC 27001 Information Security Management Lead Auditor</h3>
-        <span class="cert-issuer">BSI (British Standards Institution)</span>
+        <h3 class="cert-name">Fu Jen Catholic University Collegiate Programming Contest 14th place</h3>
+        <span class="cert-issuer" style="display: none;"></span>
       </div>
-      <div class="cert-date">Issued Dec 2025</div>
+      <div class="cert-date" style="display: none;"></div>
     </div>
   </div>
 
   <div class="cert-card">
-    <div class="cert-badge-placeholder">AWS</div>
+    <div class="cert-badge-placeholder">TOEIC</div>
     <div class="cert-info">
       <div class="cert-main">
-        <h3 class="cert-name">AWS Certified Solutions Architect – Associate</h3>
-        <span class="cert-issuer">Amazon Web Services</span>
+        <h3 class="cert-name">TOEIC 895</h3>
+        <span class="cert-issuer" style="display: none;"></span>
       </div>
-      <div class="cert-date">Issued Oct 2025</div>
-    </div>
-  </div>
-
-  <div class="cert-card">
-    <div class="cert-badge-placeholder">GCE</div>
-    <div class="cert-info">
-      <div class="cert-main">
-        <h3 class="cert-name">Google Cloud Certified Associate Cloud Engineer</h3>
-        <span class="cert-issuer">Google Cloud</span>
-      </div>
-      <div class="cert-date">Issued Aug 2025</div>
+      <div class="cert-date" style="display: none;"></div>
     </div>
   </div>
 
