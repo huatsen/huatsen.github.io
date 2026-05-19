@@ -53,7 +53,7 @@ image:
     margin-bottom: 6px;
   }
   .course-name {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: #555555;
     line-height: 1.5;
     margin: 4px 0;
