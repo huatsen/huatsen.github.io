@@ -241,20 +241,6 @@ image:
 
   <div class="tech-card">
     <div class="tech-header">
-      <h3 class="tech-name">AI & Machine Learning</h3>
-    </div>
-    <div class="tech-progress-bg">
-      <div class="tech-progress-fill" style="width: 85%;"></div>
-    </div>
-    <ul class="tech-detail-list">
-      <li><strong>Algorithms</strong> — Specialized in Advanced Algorithms, Data Mining & game-playing AI.</li>
-      <li><strong>ML Modeling</strong> — Experienced in AI system modeling & predictive forecasting.</li>
-      <li><strong>Deep Learning</strong> — Skilled in implementation via PyTorch frameworks.</li>
-    </ul>
-  </div>
-
-  <div class="tech-card">
-    <div class="tech-header">
       <h3 class="tech-name">Programming</h3>
     </div>
     <div class="tech-progress-bg">
@@ -264,6 +250,20 @@ image:
       <li><strong>Languages</strong> — Competent in Python (AI/ML), C/C++, JavaScript (Web).</li>
       <li><strong>Workflows</strong> — Practiced in web deployment and Git version control via GitHub.</li>
       <li><strong>Infrastructure</strong> — Knowledgeable in Cloud Computing and SQL databases.</li>
+    </ul>
+  </div>
+
+  <div class="tech-card">
+    <div class="tech-header">
+      <h3 class="tech-name">AI & Machine Learning</h3>
+    </div>
+    <div class="tech-progress-bg">
+      <div class="tech-progress-fill" style="width: 85%;"></div>
+    </div>
+    <ul class="tech-detail-list">
+      <li><strong>Algorithms</strong> — Specialized in Advanced Algorithms, Data Mining & game-playing AI.</li>
+      <li><strong>ML Modeling</strong> — Experienced in AI system modeling & predictive forecasting.</li>
+      <li><strong>Deep Learning</strong> — Skilled in implementation via PyTorch frameworks.</li>
     </ul>
   </div>
 
