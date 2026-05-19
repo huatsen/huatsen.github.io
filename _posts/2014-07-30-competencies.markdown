@@ -146,62 +146,92 @@ image:
 ## Technical Skills
 
 <style>
-  /* 框框的外層大容器 */
-  .skills-grid {
+  
+  .tech-skills-grid {
     display: flex;
-    flex-wrap: wrap;       /* 超過寬度自動換行，相容手機版 */
-    gap: 20px;             /* 框框之間的間距 */
-    margin: 25px 0 50px 0; /* 上下留出合適的呼吸空間 */
+    flex-wrap: nowrap;     
+    gap: 20px;             
+    margin: 25px 0 50px 0;
     width: 100%;
   }
 
-  /* 單個技能小框框的基本樣式 */
-  .skill-box {
-    flex: 1;
-    min-width: 220px;      /* 確保在小螢幕時框框不會被擠壓得太醜 */
+  .tech-card {
+    flex: 1;               
     background: #fcfcfc;
     border: 1px solid #e5e5e5;
-    border-radius: 8px;    /* 呼應語言卡片的圓角 */
-    padding: 22px;
-    text-align: center;    /* 文字一律精準置中 */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.01);
-    
-    /* 絲滑的滑鼠懸停動畫過渡 */
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
-                box-shadow 0.2s ease, 
-                border-color 0.2s ease;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
   }
-
-  /* 🖱️ 當滑鼠移到小框框上時的動態特效 */
-  .skill-box:hover {
-    transform: translateY(-4px);           /* 微微向上飄浮 4px */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.06); /* 稍微加深陰影，更有立體感 */
-    border-color: #999999;                 /* 邊框顏色變深 */
+  
+  .tech-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: #cccccc;
   }
-
-  /* 框框內文字的字體樣式 */
-  .skill-title {
-    font-size: 1.15rem;
-    font-weight: 600;
+  
+  .tech-header {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .tech-name {
+    font-size: 1.15rem;    
+    font-weight: bold;
     color: #222222;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    letter-spacing: 0.3px;
+  }
+  
+  .tech-progress-bg {
+    background: #eee;
+    height: 5px;
+    border-radius: 2px;
+    margin-bottom: 5px;   
+    overflow: hidden;
+  }
+  
+  .tech-progress-fill {
+    background: #555;
+    height: 100%;
+    border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    .tech-skills-grid {
+      flex-wrap: wrap;     
+    }
   }
 </style>
 
-<div class="skills-grid">
+<div class="tech-skills-grid">
 
-  <div class="skill-box">
-    <h4 class="skill-title">AI & Machine Learning</h4>
+  <div class="tech-card">
+    <div class="tech-header">
+      <h3 class="tech-name">AI & Machine Learning</h3>
+    </div>
+    <div class="tech-progress-bg">
+      <div class="tech-progress-fill" style="width: 85%;"></div>
+    </div>
   </div>
 
-  <div class="skill-box">
-    <h4 class="skill-title">Programming</h4>
+  <div class="tech-card">
+    <div class="tech-header">
+      <h3 class="tech-name">Programming</h3>
+    </div>
+    <div class="tech-progress-bg">
+      <div class="tech-progress-fill" style="width: 85%;"></div>
+    </div>
   </div>
 
-  <div class="skill-box">
-    <h4 class="skill-title">Data Analysis</h4>
+  <div class="tech-card">
+    <div class="tech-header">
+      <h3 class="tech-name">Data Analysis</h3>
+    </div>
+    <div class="tech-progress-bg">
+      <div class="tech-progress-fill" style="width: 90%;"></div>
+    </div>
   </div>
 
 </div>
