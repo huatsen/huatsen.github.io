@@ -53,7 +53,7 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
     margin-bottom: 6px;
   }
   .course-name {
-    font-size: inherit;
+    font-size: 1rem;
     color: #555555;
     line-height: 1.5;
     margin: 4px 0;
