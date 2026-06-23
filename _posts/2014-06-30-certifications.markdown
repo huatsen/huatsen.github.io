@@ -61,7 +61,7 @@ image:
 
   <div class="cert-card">
     <div class="cert-badge-placeholder">CPC</div>
-    <h3 class="cert-name">Honorable Mention (14th Place) — Fu Jen Catholic University Collegiate Programming Contest</h3>
+    <h3 class="cert-name">Fu Jen Catholic University Collegiate Programming Contest — 14th Place</h3>
   </div>
 
   <div class="cert-card">
